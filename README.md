@@ -21,7 +21,7 @@ Curation of everything
 
 ### 변환
 - ipynb (ipython notebook) to markdown<
-  - ` ipython nbconvert --to notebook --execute mynotebook.ipynb `
+  - ` ipython nbconvert --to notebook mynotebook.ipynb `
 
 ### 잼나리 해보이는 곰국
 - [How transferable are features in deep neural networks?](http://yosinski.com/media/papers/Yosinski__2014__NIPS__How_Transferable_with_Supp.pdf)
