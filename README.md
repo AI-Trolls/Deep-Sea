@@ -15,7 +15,7 @@ Curation of everything
 
 - [RegExr](https://regexr.com)
 
-- ETRI의 <s>공공</s> 인공지능 <s>오픈</s> API·DATA 서비스 포털(http://aiopen.etri.re.kr
+- [ETRI의 <s>공공</s> 인공지능 <s>오픈</s> API·DATA 서비스 포털](http://aiopen.etri.re.kr)
   - 장점: 한국어에 대한 수준 높은 언어 분석(형태소 분석), 어휘관계 분석, 질문 분석, 음성 인식 API 제공.
   - 단점: 키 발급받아야 사용가능하고, 그다지 공공·오픈 이라는 느낌이 들지 않음
 
@@ -24,7 +24,7 @@ Curation of everything
   - ` ipython nbconvert --to notebook --execute mynotebook.ipynb `
 
 ### 잼나리 해보이는 곰국
--  [How transferable are features in deep neural networks?] (http://yosinski.com/media/papers/Yosinski__2014__NIPS__How_Transferable_with_Supp.pdf)
+- [How transferable are features in deep neural networks?](http://yosinski.com/media/papers/Yosinski__2014__NIPS__How_Transferable_with_Supp.pdf)
   - Jason Yosinski, Jeff Clune, Yoshua Bengio, and Hod Lipson
   - NIPS, 2014
 - [CONVERGENT LEARNING: DO DIFFERENT NEURAL NETWORKS LEARN THE SAME REPRESENTATIONS?](https://arxiv.org/pdf/1511.07543.pdf)
