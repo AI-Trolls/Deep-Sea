@@ -2,9 +2,9 @@
 Curation of everything
 
 ### 유용한 코드들
-  - [Quiver](https://github.com/keplr-io/quiver)
-    - Interactive convnet features visualization for Keras
-    - 연관 논문: http://yosinski.com/deepvis
+- [Quiver](https://github.com/keplr-io/quiver)
+  - Interactive convnet features visualization for Keras
+  - 연관 논문: http://yosinski.com/deepvis
 
 ### 읽어볼만한 자료들
 - [Python 게임 서버 안녕하십니까? 몬스터 슈퍼리그 게임 서버 - SMARTSTUDY 박준철](https://www.slideshare.net/joongom/ndc2017-python)
@@ -20,6 +20,13 @@ Curation of everything
   - 단점: 키 발급받아야 사용가능하고, 그다지 공공·오픈 이라는 느낌이 들지 않음
 
 ### 변환
-
 - ipynb (ipython notebook) to markdown<
   - ` ipython nbconvert --to notebook --execute mynotebook.ipynb `
+
+### 잼나리 해보이는 곰국
+-  [How transferable are features in deep neural networks?] (http://yosinski.com/media/papers/Yosinski__2014__NIPS__How_Transferable_with_Supp.pdf)
+  - Jason Yosinski, Jeff Clune, Yoshua Bengio, and Hod Lipson
+  - NIPS, 2014
+- [CONVERGENT LEARNING: DO DIFFERENT NEURAL NETWORKS LEARN THE SAME REPRESENTATIONS?](https://arxiv.org/pdf/1511.07543.pdf)
+  - Yixuan Li, Jason Yosinski, Jeff Clune, Hod Lipson, & John Hopcroft
+  - ICLR, 2016
