@@ -20,8 +20,8 @@ Curation of everything
   - 단점: 키 발급받아야 사용가능하고, 그다지 공공·오픈 이라는 느낌이 들지 않음
 
 ### 변환
-- ipynb (ipython notebook) to markdown<
-  - ` ipython nbconvert --to notebook mynotebook.ipynb `
+- ipynb (ipython notebook) to markdown
+  - ` ipython nbconvert --to markdown mynotebook.ipynb `
 
 ### 잼나리 해보이는 곰국
 - [How transferable are features in deep neural networks?](http://yosinski.com/media/papers/Yosinski__2014__NIPS__How_Transferable_with_Supp.pdf)
