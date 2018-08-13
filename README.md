@@ -35,3 +35,7 @@ Curation of everything
 - [LambdaHack](https://github.com/LambdaHack/LambdaHack)
 - [openage](https://github.com/SFTtech/openage) - age of empire 2 소스 코드 공개... ㅎㄷㄷ
 - [codecombat](https://github.com/codecombat/codecombat) - 게임으로 배우는 코딩?!
+
+### 너무 많아서 골치아픈 python 도서관들
+- [Fabricb](http://www.fabfile.org/) - execute shell commands remotely over SSH
+- [spaCy](https://spacy.io) - Industrial-strength natural language processing in python
