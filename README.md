@@ -33,3 +33,5 @@ Curation of everything
 
 ### 싱기방기 github
 - [LambdaHack](https://github.com/LambdaHack/LambdaHack)
+- [openage](https://github.com/SFTtech/openage) - age of empire 2 소스 코드 공개... ㅎㄷㄷ
+- [codecombat](https://github.com/codecombat/codecombat) - 게임으로 배우는 코딩?!
