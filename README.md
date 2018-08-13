@@ -30,3 +30,6 @@ Curation of everything
 - [CONVERGENT LEARNING: DO DIFFERENT NEURAL NETWORKS LEARN THE SAME REPRESENTATIONS?](https://arxiv.org/pdf/1511.07543.pdf)
   - Yixuan Li, Jason Yosinski, Jeff Clune, Hod Lipson, & John Hopcroft
   - ICLR, 2016
+
+### 싱기방기 github
+- [LambdaHack](https://github.com/LambdaHack/LambdaHack)
