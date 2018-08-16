@@ -39,3 +39,15 @@ Curation of everything
 ### 너무 많아서 골치아픈 python 도서관들
 - [Fabricb](http://www.fabfile.org/) - execute shell commands remotely over SSH
 - [spaCy](https://spacy.io) - Industrial-strength natural language processing in python
+
+### Problem Solving
+- Vim update
+  ```bash
+  # curl -L https://copr.fedorainfracloud.org/coprs/mcepl/vim8/repo/epel-7/mcepl-vim8-epel-7.repo -o /etc/yum.repos.d/mcepl-vim8-epel-7.repo
+  # yum update vim*
+  ```
+- syntax highlighting for Vue
+  ```bash
+  git clone https://github.com/posva/vim-vue.git ~/.vim/pack/plugins/start/vim-vue
+  ```
+  
