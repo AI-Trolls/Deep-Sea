@@ -52,12 +52,12 @@ Curation of everything
   ```
   
 - .vimrc for python [link](https://stackoverflow.com/questions/65076/how-to-setup-vim-autoindentation-properly-for-editing-python-files-py)
-```bash
-set nu
-set expandtab
-set textwidth=120
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set autoindent
-```
+  ```bash
+  set nu
+  set expandtab
+  set textwidth=120
+  set tabstop=4
+  set softtabstop=4
+  set shiftwidth=4
+  set autoindent
+  ```
