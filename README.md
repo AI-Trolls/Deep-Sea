@@ -46,7 +46,7 @@ Curation of everything
   # curl -L https://copr.fedorainfracloud.org/coprs/mcepl/vim8/repo/epel-7/mcepl-vim8-epel-7.repo -o /etc/yum.repos.d/mcepl-vim8-epel-7.repo
   # yum update vim*
   ```
-- syntax highlighting for Vue
+- syntax highlighting for Vue (needs Vim 8)
   ```bash
   git clone https://github.com/posva/vim-vue.git ~/.vim/pack/plugins/start/vim-vue
   ```
