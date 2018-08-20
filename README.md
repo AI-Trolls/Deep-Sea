@@ -72,5 +72,38 @@ Curation of everything
   pip install tensorflow-transform
   ```
   
-  
+- Error: libzmq.so.5: cannot open shared object file: No such file or directory
+  ```
+  zeromq 설치 및
+  .bashrc에서 $LD_LIBRARY_PATH 에 해당 파일 path 추가
+  ```
 
+- Error:/lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by .../zmq.node)
+  ```
+  conda install libgcc
+  면 끝나지만, 내 환경에서는 이것이 안됨ㅠ
+  
+  strings /usr/lib/libstdc++.so.6 | grep GLIBCXX
+  로 확인해보니, GLIBCXX_3.4 ~ GLIBCXX_3.4.19 까지만 있고... 21버젼은 없는 상황.
+  
+  cd /tmp
+  wget ftp://ftp.gwdg.de/pub/misc/gcc/releases/gcc-8.2.0/gcc-8.2.0.tar.gz
+  tar -xvzf gcc-8.2.0.tar.gz
+  cd gcc-8.2.0
+  ./contrib/download_prerequisites
+  mkdir objdir
+  cd objdir
+  ../configure --prefix=/opt/gcc-8.2.0
+  make
+  make install
+  mv /usr/lib64/libstdc++.so.6 /usr/lib64/libstdc++.so.6.bak
+  mv /opt/gcc-8.2.0/lib64/libstdc++.so.6 /usr/lib64/libstdc++.so.6
+  mv /opt/gcc-8.2.0/lib64/libstdc++.so.6.0.16 /usr/lib64/libstdc++.so.6.0.16
+  ```
+  
+- 리눅스 운영체제 bit 확인 방법
+  ```
+  getconf LONG_BIT
+  ```
+  결과가 64면 64bit
+  결과가 32면 32bit
