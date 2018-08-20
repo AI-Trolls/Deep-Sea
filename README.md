@@ -61,3 +61,16 @@ Curation of everything
   set shiftwidth=4
   set autoindent
   ```
+  
+- conda create on offline environment
+  ```bash
+  conda create -n yourenvname --clone root
+  ```
+  
+- tf.estimator package not installed
+  ```bash
+  pip install tensorflow-transform
+  ```
+  
+  
+
