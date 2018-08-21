@@ -40,6 +40,9 @@ Curation of everything
 - [Fabricb](http://www.fabfile.org/) - execute shell commands remotely over SSH
 - [spaCy](https://spacy.io) - Industrial-strength natural language processing in python
 
+### 이것도 너무 많아 js
+- masonry js
+
 ### Problem Solving
 - Vim update
   ```bash
@@ -107,3 +110,26 @@ Curation of everything
   ```
   결과가 64면 64bit
   결과가 32면 32bit
+
+- 설치 설치 설치...
+  - node zmq (Error: Cannot find module 'zmq')
+    - brew install zeromq
+    - npm install zmq
+      - error: 'class v8::object' has no member named 'ForceSet'
+      - npm ERR! zmq@2.15.3 install: `node-gyp rebuild`
+        ```
+        brew install pkg-config
+        ```
+    - 해결됐다면, 당신은 축복받음. node 버젼이 10 이상인 경우 zmq와 문제가 생김. zmq에서 아직 해결 안함 ㅡㅡ
+      따라서 node 버젼을 낮출 필요가 있음. nvm을 사용한다면, 
+      ```
+      nvm install 8.11.3
+      nvm use 8.11.3
+      ```
+  - Linuxbrew
+    ```bash
+    git clone https://github.com/Linuxbrew/brew.git ~/.linuxbrew
+    PATH="$HOME/.linuxbrew/bin:$PATH"
+    export MANPATH="$(brew --prefix)/share/man:$MANPATH"
+    export INFOPATH="$(brew --prefix)/share/info:$INFOPATH"
+    ```
