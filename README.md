@@ -133,3 +133,9 @@ Curation of everything
     export MANPATH="$(brew --prefix)/share/man:$MANPATH"
     export INFOPATH="$(brew --prefix)/share/info:$INFOPATH"
     ```
+    
+- /home 디렉토리 바꾸기?
+  ```
+  du -hsx * | sort -rh | head -n 10
+  df -h
+  ```
