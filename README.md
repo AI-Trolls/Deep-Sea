@@ -147,3 +147,10 @@ Curation of everything
   username:x: ... ::/home/username:/binbash
   username:x: ... ::/newdir/home/chanranhari:/binbash
   ```
+
+- 콘다 경로 변경
+  ```
+  whereis 명령어로 찾아서... 경로 변경
+  activate 
+  conda.sh
+  ```
