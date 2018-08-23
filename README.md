@@ -136,8 +136,14 @@ Curation of everything
     
 - /home 디렉토리 바꾸기?
   ```
-  du -hsx * | sort -rh | head -n 10
-  df -h
-  resync
-  sudo mount /dev/장치파티션 /home
+    du -hsx * | sort -rh | head -n 10
+    df -h
+    resync
+    sudo mount /dev/장치파티션 /home
+  ```
+  answer is...
+  ```
+  vi /etc/passwd
+  username:x: ... ::/home/username:/binbash
+  username:x: ... ::/newdir/home/chanranhari:/binbash
   ```
