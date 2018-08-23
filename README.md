@@ -138,4 +138,6 @@ Curation of everything
   ```
   du -hsx * | sort -rh | head -n 10
   df -h
+  resync
+  sudo mount /dev/장치파티션 /home
   ```
