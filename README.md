@@ -113,6 +113,8 @@ Curation of everything
 
 - 설치 설치 설치...
   - node zmq (Error: Cannot find module 'zmq')
+    - pip install pyzmq
+    - conda install pyzmq
     - brew install zeromq
     - npm install zmq
       - error: 'class v8::object' has no member named 'ForceSet'
