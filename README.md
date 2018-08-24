@@ -128,6 +128,10 @@ Curation of everything
       nvm install 8.11.3
       nvm use 8.11.3
       ```
+  - scikit-learn
+    - no module named 'sklearn'
+    - conda install cython
+    - conda install scikit-learn
   - Linuxbrew
     ```bash
     git clone https://github.com/Linuxbrew/brew.git ~/.linuxbrew
