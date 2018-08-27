@@ -176,3 +176,19 @@ Curation of everything
   remove the shortcut from the applications folder
   ```
   이정도..?
+  
+- mongoDB
+  - update specific fields
+  ```mongo
+  db.books.update(
+   { _id: 1 },
+   {
+     $set: {
+       item: "ABC123",
+       "info.publisher": "2222",
+       tags: [ "software" ],
+       "ratings.1": { by: "xyz", rating: 3 }
+     }
+   }
+   ```
+)
