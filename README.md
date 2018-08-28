@@ -178,6 +178,10 @@ Curation of everything
   이정도..?
   
 - mongoDB
+  - create collection
+  ```mongodb
+  db.createCollection("people", { autoIndexId: true } )
+  ```
   - update specific fields
   ```mongo
   db.books.update(
@@ -191,4 +195,5 @@ Curation of everything
      }
    }
    ```
+  - save(insert) document (w/ mongoose)
 )
