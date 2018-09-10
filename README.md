@@ -216,3 +216,6 @@ Curation of everything
    ```
   - save(insert) document (w/ mongoose)
 )
+
+  - error: YouCompleteMe unavailable: requires vim compiled with python
+    apt-get install python-dev
