@@ -57,6 +57,11 @@ Curation of everything
   jupyter lab --ip 0.0.0.0 --port 80
   ```
 
+### OS 확인
+  ```
+  grep . /etc/*-release
+  ```
+
 ### Problem Solving
 - Vim update
   ```bash
