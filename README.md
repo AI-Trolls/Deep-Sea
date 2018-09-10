@@ -47,6 +47,16 @@ Curation of everything
 ### 이것도 너무 많아 js
 - masonry js
 
+### JupyterLab
+  ```bash
+  conda install -c conda-forge jupyterlab
+  python3 -m pip install jupyterlab
+  pipenv install jupyterlab
+  pipenv shell
+  
+  jupyter lab --ip 0.0.0.0 --port 80
+  ```
+
 ### Problem Solving
 - Vim update
   ```bash
