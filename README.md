@@ -61,7 +61,6 @@ Curation of everything
   ```
   grep . /etc/*-release
   ```
-
 ### Problem Solving
 - Vim update
   ```bash
@@ -218,4 +217,18 @@ Curation of everything
 )
 
   - error: YouCompleteMe unavailable: requires vim compiled with python
+    ```bash
     apt-get install python-dev
+    ```
+    해도 안된다면,
+    ```bash
+    cd /tmp && git clone https://github.com/vim/vim.git && cd vim
+    ./configure --enable-pythoninterp --prefix=/usr
+    make && sudo make install
+    ```
+    make 과정에서 "you need to install a terminal library; for example ncurses"같은 error가 난다면,
+    ```
+    apt-get install libncurses5-dev libncursesw5-dev
+    ```
+    걍 태초부터 
+    https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
