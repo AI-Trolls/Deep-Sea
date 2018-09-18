@@ -61,6 +61,29 @@ Curation of everything
   ```
   grep . /etc/*-release
   ```
+  
+### pixiedust 설치 및 사용
+  https://pixiedust.github.io/pixiedust/install.html
+  ```bash
+  pip install pixiedust
+  pip3 install -U html5lib=="0.9999999"
+  jupyter pixiedust install
+  sudo update-alternatives --config java
+  ```
+  java9는 spark & scala를 위해 지원이 안되므로, sudo update-alternatives --config java를 통해 8로 낮추거나 재설치해야함
+
+  jupyter에 nodejs가 없는 경우
+  ```bash
+  git clone https://github.com/notablemind/jupyter-nodejs.git
+  cd jupyter-nodejs
+  mkdir -p ~/.ipython/kernels/nodejs/
+  npm install && node install.js
+  npm run build
+  npm run build-ext
+  jupyter console --kernel nodejs
+  ```
+
+
 ### Problem Solving
 - Vim update
   ```bash
