@@ -109,11 +109,11 @@ Curation of everything
   ```
 - python 코드에 적용
   ```bash
-  import matplotlib.pyplot as plt
-  import matplotlib.font_manager as fm
+  font_fname = '/usr/share/fonts/truetype/nanum/NanumGothic.ttf'
+  font_name = font_manager.FontProperties(fname=font_fname).get_name()
 
-  path = '/usr/share/fonts/truetype/nanum/NanumMyeongjo.ttf'
-  fontprop = fm.FontProperties(fname=path, size=18)
+  rc('font', family=font_name)
+  print(font_name)
   ```
   
 ### Problem Solving
