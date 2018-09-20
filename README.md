@@ -40,6 +40,14 @@ Curation of everything
 ### python으로 http 파일 서버 열기
 - python3 -m http.server 3333
 
+### python runtime timestamp print 
+  ```python3
+  import time
+  start_time = time.time()
+  main()
+  print("--- %s seconds ---" % (time.time() - start_time))
+  ```
+
 ### 너무 많아서 골치아픈 python 도서관들
 - [Fabricb](http://www.fabfile.org/) - execute shell commands remotely over SSH
 - [spaCy](https://spacy.io) - Industrial-strength natural language processing in python
