@@ -83,7 +83,39 @@ Curation of everything
   jupyter console --kernel nodejs
   ```
 
+### Matplotlib 에서 한글 깨짐 linux/ubuntu
+- 폰트 설치
+  ```bash
+  sudo apt-get install fonts-nanum*
+  sudo fc-cache -fv
+  sudo cp new_font.ttf /usr/share/fonts/
+  sudo fc-cache -fv
+  ```
+- 로컬 영역에 추가 및 캐시 삭제
+  ```bash
+  sudo cp /usr/share/fonts/truetype/nanum/Nanum* /usr/local/lib/python3.4/dist-packages/matplotlib/mpl-data/fonts/ttf/
+  rm -rf /home/ubuntu/.cache/matplotlib/*
+  ```
+- conda 콘다 영역에 한글 폰트 추가 및 캐시 삭제
+  ```bash
+  sudo cp /usr/share/fonts/truetype/nanum/Nanum* /home/{user_id}/anaconda3/envs/{env_name}/lib/python3.5/site-packages/matplotlib/mpl-data/fonts/ttf/
+  rm -rf /home/ubuntu/.cache/matplotlib/*
+  ```
+- 사용 가능한 ttf 폰트 목록 확인
+  ```bash
+  import matplotlib
+  import matplotlib.font_manager
+  matplotlib.font_manager.fontManager.ttflist
+  ```
+- python 코드에 적용
+  ```bash
+  import matplotlib.pyplot as plt
+  import matplotlib.font_manager as fm
 
+  path = '/usr/share/fonts/truetype/nanum/NanumMyeongjo.ttf'
+  fontprop = fm.FontProperties(fname=path, size=18)
+  ```
+  
 ### Problem Solving
 - Vim update
   ```bash
