@@ -69,7 +69,19 @@ Curation of everything
   ```
   grep . /etc/*-release
   ```
+### Ubuntu / Linux 개척
+
+- 계정 생성
+  adduser의 경우 명령어 실행시 기본 계정정보를 같이 생성해주지만 <- 가 편함
+  useradd의 경우 계정만 생성하며 기타 다른 정보를 수동으로 생성 및 설정해주어야 한다. 
+  /etc/passwd 에서 확인 및 수정
   
+- sudo 권한
+  $ sudo vi /etc/sudoers
+  계정명 ALL=(ALL:ALL) ALLL
+
+출처: http://mirwebma.tistory.com/112 [Run and Fly]
+
 ### pixiedust 설치 및 사용
   https://pixiedust.github.io/pixiedust/install.html
   ```bash
