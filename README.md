@@ -311,3 +311,6 @@ Curation of everything
     ```
     걍 태초부터 
     https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
+
+  - python no module named ujson, while it's already installed
+    export PYTHONPATH=$PYTHONPATH:/usr/lib64/python2.7/site-packages
