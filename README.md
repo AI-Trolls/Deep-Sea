@@ -136,6 +136,10 @@ Curation of everything
   print(font_name)
   ```
   
+### Linux 명령어
+- 남은 용량 보기
+  - df -h : 깔끔하게 정리해서 보여줌
+  
 ### Problem Solving
 - Vim update
   ```bash
