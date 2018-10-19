@@ -1,6 +1,14 @@
 # deep-sea
 Curation of everything
 
+### 유용한 프로그램들
+  - immortal
+    - A nix cross-platform (OS agnostic) supervisor
+    - 간단히 설명하면 프로그램이 꺼지면 다시 살려줌. ~이모텝이라는 이름이었어도 좋았을텐데~
+    - installation
+      - curl -s https://packagecloud.io/install/repositories/immortal/immortal/script.deb.sh | sudo bash
+      - apt install immortal
+
 ### 유용한 코드들
 - [Quiver](https://github.com/keplr-io/quiver)
   - Interactive convnet features visualization for Keras
