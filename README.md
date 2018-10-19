@@ -201,12 +201,16 @@ Curation of everything
   mv /opt/gcc-8.2.0/lib64/libstdc++.so.6.0.16 /usr/lib64/libstdc++.so.6.0.16
   ```
   
-- 리눅스 운영체제 bit 확인 방법
+- 리눅스 운영체제 bit 확인 방법 (Linux OS bit)
   ```
   getconf LONG_BIT
   ```
   결과가 64면 64bit
   결과가 32면 32bit
+  
+  ```
+  grep . /etc/*-release
+  ```
 
 - 설치 설치 설치...
   - node zmq (Error: Cannot find module 'zmq')
