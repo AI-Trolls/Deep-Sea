@@ -1,0 +1,5 @@
+- jsondecoderror: invalid control character at 
+  - zmq로 전송받은 binary 형태를 utf-8로 변환하고, json.loads 하는 과정에서 발생한 error
+  - msg_json = json.loads(msg.decode('utf-8'), strict=False)
+  - If strict is false (True is the default), then control characters will be allowed inside strings. Control characters in this context are those with character codes in the 0–31 range, including '\t' (tab), '\n', '\r' and '\0'.
+  
