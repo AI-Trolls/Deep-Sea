@@ -56,6 +56,9 @@ Curation of everything
   print("--- %s seconds ---" % (time.time() - start_time))
   ```
 
+### conda 용량 줄이기
+- conda clean -tp
+
 ### 너무 많아서 골치아픈 python 도서관들
 - [Fabricb](http://www.fabfile.org/) - execute shell commands remotely over SSH
 - [spaCy](https://spacy.io) - Industrial-strength natural language processing in python
