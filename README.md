@@ -45,9 +45,6 @@ Curation of everything
 - [openage](https://github.com/SFTtech/openage) - age of empire 2 소스 코드 공개... ㅎㄷㄷ
 - [codecombat](https://github.com/codecombat/codecombat) - 게임으로 배우는 코딩?!
 
-## conda 용량 줄이기
-- conda clean -tp
-
 ## 너무 많아서 골치아픈 python 도서관들
 - [Fabricb](http://www.fabfile.org/) - execute shell commands remotely over SSH
 - [spaCy](https://spacy.io) - Industrial-strength natural language processing in python
@@ -106,11 +103,6 @@ Curation of everything
   set softtabstop=4
   set shiftwidth=4
   set autoindent
-  ```
-  
-- conda create on offline environment
-  ```bash
-  conda create -n yourenvname --clone root
   ```
   
 - tf.estimator package not installed
@@ -176,29 +168,6 @@ Curation of everything
     export INFOPATH="$(brew --prefix)/share/info:$INFOPATH"
     ```
     
-- 콘다 경로 변경
-  ```
-  whereis 명령어로 찾아서... 경로 변경
-  activate 
-  conda.sh
-  ```
-  - 위의 conda.sh 파일과 activate, ... 들의 path를 수정하였지만, 계속해서 문제가 발생해서 conda uninstall을 safely 진행하게 되었다.
-  ```bash
-  rm -rf ~/anaconda
-  rm -rf ~/.anaconda/navigator
-  rm -rf ~/.condarc ~/.conda ~/.continuum
-  nano ~/.bash_profile # remove the anaconda directory from your `PATH` env var
-  remove the shortcut from the applications folder
-  ```
-  내게 적용된 방법은
-  ```bash
-  rm -rf ~/anaconda
-  rm -rf ~/.conda
-  nano ~/.bash_profile # remove the anaconda directory from your `PATH` env var
-  remove the shortcut from the applications folder
-  ```
-  이정도..?
-  
 - mongoDB
   - create collection
   ```mongodb
