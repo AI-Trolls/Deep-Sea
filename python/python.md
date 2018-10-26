@@ -18,6 +18,12 @@
   if facility in accepted_strings:
       do_stuff()
   ```
+  
+  - python np array initialization with value and length
+  - np.full((3, 5), 7, dtype=int)
+    array([[7, 7, 7, 7, 7],
+          [7, 7, 7, 7, 7],
+          [7, 7, 7, 7, 7]])
 
 ## JSON
 - JSONDecodeError:
@@ -27,3 +33,17 @@
 - UnicodeDecodeError: 'utf8' codec can't decode byte
   - str = unicode(str, errors='replace')
   - str = unicode(str, errors='ignore')
+
+## mongodb
+- mongodb find in python
+  ```python
+  import pymongo
+
+  myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+  mydb = myclient["mydatabase"]
+  mycol = mydb["customers"]
+
+  x = mycol.find_one()
+
+  print(x)
+  '''
