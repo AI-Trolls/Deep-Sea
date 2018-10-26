@@ -1,6 +1,14 @@
 # deep-sea
 Curation of everything
 
+## Sub-files
+- linux
+  - [anaconda](linux/anaconda.md)
+  - [centos](linux/centos.md)
+  - [ubuntu](linux/ubuntu.md)
+- python
+  - [python](python/python.md)
+
 ## 유용한 프로그램들
   - immortal
     - A nix cross-platform (OS agnostic) supervisor
