@@ -45,17 +45,6 @@ Curation of everything
 - [openage](https://github.com/SFTtech/openage) - age of empire 2 소스 코드 공개... ㅎㄷㄷ
 - [codecombat](https://github.com/codecombat/codecombat) - 게임으로 배우는 코딩?!
 
-## python으로 http 파일 서버 열기
-- python3 -m http.server 3333
-
-## python runtime timestamp print 
-  ```python3
-  import time
-  start_time = time.time()
-  main()
-  print("--- %s seconds ---" % (time.time() - start_time))
-  ```
-
 ## conda 용량 줄이기
 - conda clean -tp
 
@@ -75,23 +64,6 @@ Curation of everything
   
   jupyter lab --ip 0.0.0.0 --port 80
   ```
-
-## OS 확인
-  ```
-  grep . /etc/*-release
-  ```
-## Ubuntu / Linux 개척
-
-- 계정 생성
-  adduser의 경우 명령어 실행시 기본 계정정보를 같이 생성해주지만 <- 가 편함
-  useradd의 경우 계정만 생성하며 기타 다른 정보를 수동으로 생성 및 설정해주어야 한다. 
-  /etc/passwd 에서 확인 및 수정
-  
-- sudo 권한
-  $ sudo vi /etc/sudoers
-  계정명 ALL=(ALL:ALL) ALLL
-
-출처: http://mirwebma.tistory.com/112 [Run and Fly]
 
 ## pixiedust 설치 및 사용
   https://pixiedust.github.io/pixiedust/install.html
@@ -114,43 +86,6 @@ Curation of everything
   jupyter console --kernel nodejs
   ```
 
-## Matplotlib 에서 한글 깨짐 linux/ubuntu
-- 폰트 설치
-  ```bash
-  sudo apt-get install fonts-nanum*
-  sudo fc-cache -fv
-  sudo cp new_font.ttf /usr/share/fonts/
-  sudo fc-cache -fv
-  ```
-- 로컬 영역에 추가 및 캐시 삭제
-  ```bash
-  sudo cp /usr/share/fonts/truetype/nanum/Nanum* /usr/local/lib/python3.4/dist-packages/matplotlib/mpl-data/fonts/ttf/
-  rm -rf /home/ubuntu/.cache/matplotlib/*
-  ```
-- conda 콘다 영역에 한글 폰트 추가 및 캐시 삭제
-  ```bash
-  sudo cp /usr/share/fonts/truetype/nanum/Nanum* /home/{user_id}/anaconda3/envs/{env_name}/lib/python3.5/site-packages/matplotlib/mpl-data/fonts/ttf/
-  rm -rf /home/ubuntu/.cache/matplotlib/*
-  ```
-- 사용 가능한 ttf 폰트 목록 확인
-  ```bash
-  import matplotlib
-  import matplotlib.font_manager
-  matplotlib.font_manager.fontManager.ttflist
-  ```
-- python 코드에 적용
-  ```bash
-  font_fname = '/usr/share/fonts/truetype/nanum/NanumGothic.ttf'
-  font_name = font_manager.FontProperties(fname=font_fname).get_name()
-
-  rc('font', family=font_name)
-  print(font_name)
-  ```
-  
-## Linux 명령어
-- 남은 용량 보기
-  - df -h : 깔끔하게 정리해서 보여줌
-  
 ## Problem Solving
 - Vim update
   ```bash
@@ -212,17 +147,6 @@ Curation of everything
   mv /opt/gcc-8.2.0/lib64/libstdc++.so.6.0.16 /usr/lib64/libstdc++.so.6.0.16
   ```
   
-- 리눅스 운영체제 bit 확인 방법 (Linux OS bit)
-  ```
-  getconf LONG_BIT
-  ```
-  결과가 64면 64bit
-  결과가 32면 32bit
-  
-  ```
-  grep . /etc/*-release
-  ```
-
 - 설치 설치 설치...
   - node zmq (Error: Cannot find module 'zmq')
     - pip install pyzmq
@@ -252,20 +176,6 @@ Curation of everything
     export INFOPATH="$(brew --prefix)/share/info:$INFOPATH"
     ```
     
-- /home 디렉토리 바꾸기?
-  ```
-    du -hsx * | sort -rh | head -n 10
-    df -h
-    resync
-    sudo mount /dev/장치파티션 /home
-  ```
-  answer is...
-  ```
-  vi /etc/passwd
-  username:x: ... ::/home/username:/binbash
-  username:x: ... ::/newdir/home/chanranhari:/binbash
-  ```
-
 - 콘다 경로 변경
   ```
   whereis 명령어로 찾아서... 경로 변경
