@@ -25,6 +25,19 @@
           [7, 7, 7, 7, 7],
           [7, 7, 7, 7, 7]])
 
+- python으로 http 파일 서버 열기
+  ```
+  python3 -m http.server 3333
+  ```
+
+- python runtime timestamp print 
+  ```python3
+  import time
+  start_time = time.time()
+  main()
+  print("--- %s seconds ---" % (time.time() - start_time))
+  ```
+
 ## JSON
 - JSONDecodeError:
   - json_str = json.loads(jsonString, strict=False)
