@@ -1,7 +1,7 @@
 # deep-sea
 Curation of everything
 
-### 유용한 프로그램들
+## 유용한 프로그램들
   - immortal
     - A nix cross-platform (OS agnostic) supervisor
     - 간단히 설명하면 프로그램이 꺼지면 다시 살려줌. ~이모텝이라는 이름이었어도 좋았을텐데~
@@ -9,30 +9,30 @@ Curation of everything
       - curl -s https://packagecloud.io/install/repositories/immortal/immortal/script.deb.sh | sudo bash
       - apt install immortal
 
-### 유용한 코드들
+## 유용한 코드들
 - [Quiver](https://github.com/keplr-io/quiver)
   - Interactive convnet features visualization for Keras
   - 연관 논문: http://yosinski.com/deepvis
 
-### 읽어볼만한 자료들
+## 읽어볼만한 자료들
 - [Python 게임 서버 안녕하십니까? 몬스터 슈퍼리그 게임 서버 - SMARTSTUDY 박준철](https://www.slideshare.net/joongom/ndc2017-python)
   - Game Server: Flask
   - DB: SQLAlchemy
 
-### 써볼만한 기능을 가진 사이트들
+## 써볼만한 기능을 가진 사이트들
 - [RegExr](https://regexr.com)
 - [ETRI의 <s>공공</s> 인공지능 <s>오픈</s> API·DATA 서비스 포털](http://aiopen.etri.re.kr)
   - 장점: 한국어에 대한 수준 높은 언어 분석(형태소 분석), 어휘관계 분석, 질문 분석, 음성 인식 API 제공.
   - 단점: 키 발급받아야 사용가능하고, 그다지 공공·오픈 이라는 느낌이 들지 않음
 
-### Linkes
+## Linkes
 - [Open Knowledge Labs](http://okfnlabs.org/)
 
-### 변환
+## 변환
 - ipynb (ipython notebook) to markdown
   - ` ipython nbconvert --to markdown mynotebook.ipynb `
 
-### 잼나리 해보이는 곰국
+## 잼나리 해보이는 곰국
 - [How transferable are features in deep neural networks?](http://yosinski.com/media/papers/Yosinski__2014__NIPS__How_Transferable_with_Supp.pdf)
   - Jason Yosinski, Jeff Clune, Yoshua Bengio, and Hod Lipson
   - NIPS, 2014
@@ -40,15 +40,15 @@ Curation of everything
   - Yixuan Li, Jason Yosinski, Jeff Clune, Hod Lipson, & John Hopcroft
   - ICLR, 2016
 
-### 싱기방기 github
+## 싱기방기 github
 - [LambdaHack](https://github.com/LambdaHack/LambdaHack)
 - [openage](https://github.com/SFTtech/openage) - age of empire 2 소스 코드 공개... ㅎㄷㄷ
 - [codecombat](https://github.com/codecombat/codecombat) - 게임으로 배우는 코딩?!
 
-### python으로 http 파일 서버 열기
+## python으로 http 파일 서버 열기
 - python3 -m http.server 3333
 
-### python runtime timestamp print 
+## python runtime timestamp print 
   ```python3
   import time
   start_time = time.time()
@@ -56,17 +56,17 @@ Curation of everything
   print("--- %s seconds ---" % (time.time() - start_time))
   ```
 
-### conda 용량 줄이기
+## conda 용량 줄이기
 - conda clean -tp
 
-### 너무 많아서 골치아픈 python 도서관들
+## 너무 많아서 골치아픈 python 도서관들
 - [Fabricb](http://www.fabfile.org/) - execute shell commands remotely over SSH
 - [spaCy](https://spacy.io) - Industrial-strength natural language processing in python
 
-### 이것도 너무 많아 js
+## 이것도 너무 많아 js
 - masonry js
 
-### JupyterLab
+## JupyterLab
   ```bash
   conda install -c conda-forge jupyterlab
   python3 -m pip install jupyterlab
@@ -76,11 +76,11 @@ Curation of everything
   jupyter lab --ip 0.0.0.0 --port 80
   ```
 
-### OS 확인
+## OS 확인
   ```
   grep . /etc/*-release
   ```
-### Ubuntu / Linux 개척
+## Ubuntu / Linux 개척
 
 - 계정 생성
   adduser의 경우 명령어 실행시 기본 계정정보를 같이 생성해주지만 <- 가 편함
@@ -93,7 +93,7 @@ Curation of everything
 
 출처: http://mirwebma.tistory.com/112 [Run and Fly]
 
-### pixiedust 설치 및 사용
+## pixiedust 설치 및 사용
   https://pixiedust.github.io/pixiedust/install.html
   ```bash
   pip install pixiedust
@@ -114,7 +114,7 @@ Curation of everything
   jupyter console --kernel nodejs
   ```
 
-### Matplotlib 에서 한글 깨짐 linux/ubuntu
+## Matplotlib 에서 한글 깨짐 linux/ubuntu
 - 폰트 설치
   ```bash
   sudo apt-get install fonts-nanum*
@@ -147,11 +147,11 @@ Curation of everything
   print(font_name)
   ```
   
-### Linux 명령어
+## Linux 명령어
 - 남은 용량 보기
   - df -h : 깔끔하게 정리해서 보여줌
   
-### Problem Solving
+## Problem Solving
 - Vim update
   ```bash
   # curl -L https://copr.fedorainfracloud.org/coprs/mcepl/vim8/repo/epel-7/mcepl-vim8-epel-7.repo -o /etc/yum.repos.d/mcepl-vim8-epel-7.repo
