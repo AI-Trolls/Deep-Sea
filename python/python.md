@@ -48,6 +48,10 @@
   - str = unicode(str, errors='ignore')
 
 ## mongodb
+- ModuleNotFoundError: No module named 'pymongo' # pymongo 설치하기
+  ```bash
+  pip install pymongo
+  ```
 - mongodb find in python
   ```python
   import pymongo
