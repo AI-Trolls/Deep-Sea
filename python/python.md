@@ -37,6 +37,14 @@
   main()
   print("--- %s seconds ---" % (time.time() - start_time))
   ```
+  
+- 문자열에서 특수문자 지우기 (string)
+  ```python
+  import re
+  text = u'010-1566#7152'
+  parse = re.sub('[-=.#/?:$}]', '', text)
+  print parse
+  ```
 
 ## JSON
 - JSONDecodeError:
