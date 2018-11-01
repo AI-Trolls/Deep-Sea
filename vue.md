@@ -10,7 +10,7 @@
   ```
 
 - EventBus
-  ```vue
+  ```js
   // 이벤트버스 생성
   var EventBus = new Vue()
   // 이벤트 발행
