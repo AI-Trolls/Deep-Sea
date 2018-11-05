@@ -72,3 +72,12 @@
 
   print(x)
   ```
+  
+## zmq
+- bind -> connect로 바꿨을 때 생기는 오류
+  ```
+  File "zmq/backend/cython/socket.pyx", line 580, in zmq.backend.cython.socket.Socket.connect
+  File "zmq/backend/cython/checkrc.pxd", line 25, in zmq.backend.cython.checkrc._check_rc
+  zmq.error.ZMQError: Invalid argument
+  ```
+  - *를 못씀
