@@ -55,7 +55,7 @@
   - str = unicode(str, errors='replace')
   - str = unicode(str, errors='ignore')
 
-## mongodb
+## pymongo (mongodb)
 - ModuleNotFoundError: No module named 'pymongo' # pymongo 설치하기
   ```bash
   pip install pymongo
@@ -71,6 +71,13 @@
   x = mycol.find_one()
 
   print(x)
+  ```
+- mongodb find with for loop
+  ```python
+  _db = _client["_db_name"]
+  _col = _db["_collection_name"]
+  for doc in _col.find():
+    print (doc)
   ```
   
 ## zmq
