@@ -54,6 +54,13 @@
 - UnicodeDecodeError: 'utf8' codec can't decode byte
   - str = unicode(str, errors='replace')
   - str = unicode(str, errors='ignore')
+- Json file open
+  ```python
+  import json
+  with open('data.json') as f:
+    data = json.load(f)
+  print(data)
+  ```
 
 ## pymongo (mongodb)
 - ModuleNotFoundError: No module named 'pymongo' # pymongo 설치하기
