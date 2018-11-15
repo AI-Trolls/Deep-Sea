@@ -46,6 +46,19 @@
   print parse
   ```
 
+- Handling missing keys in Python dictionaries
+  - get(key, default_value) 함수를 활용하여 해결
+  - body_position_info라는 key에 해당하는 값이 있으면, return해주고, 아니면 -1을 리턴
+  ```python
+  if output_data.get('body_position_info', -1) == -1:
+    continue
+  ``` 
+  
+- 변수의 type 검사 (아래 예는 str인지)
+  ```python
+  if isinstance(variable, str):
+  ```
+
 ## JSON
 - JSONDecodeError:
   - json_str = json.loads(jsonString, strict=False)
