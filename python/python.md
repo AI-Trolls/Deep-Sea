@@ -1,37 +1,48 @@
 ## Python
 - python np array initialization with value and length
-  - np.full((3, 5), 7, dtype=int)
-    array([[7, 7, 7, 7, 7],
-          [7, 7, 7, 7, 7],
-          [7, 7, 7, 7, 7]])
-          
+  ```python
+  np.full((3, 5), 7, dtype=int)
+  array([[7, 7, 7, 7, 7],
+        [7, 7, 7, 7, 7],
+        [7, 7, 7, 7, 7]])
+  ```
+- python list initialization with value and length
+  ```python
+  u_list = [0] * 10
+  ```
 - python print same line
-  - print (word1, end=' ')
+  ```python
+  print (word1, end=' ')
+  ```
   
 - python time to string
-  - import time
-    timestr = time.strftime("%Y%m%d-%H%M%S-%f) # %f: micro second
+  ```python
+  import time
+  timestr = time.strftime("%Y%m%d-%H%M%S-%f) # %f: micro second
+  ```
 
 - Comparing a string to multiple items in Python
-  ```python3
+  ```python
   accepted_strings = {'auth', 'authpriv', 'daemon'}
   if facility in accepted_strings:
       do_stuff()
   ```
   
   - python np array initialization with value and length
-  - np.full((3, 5), 7, dtype=int)
+    ```python
+    np.full((3, 5), 7, dtype=int)
     array([[7, 7, 7, 7, 7],
           [7, 7, 7, 7, 7],
           [7, 7, 7, 7, 7]])
+    ```
 
 - python으로 http 파일 서버 열기
-  ```
-  python3 -m http.server 3333
-  ```
+    ```
+    python3 -m http.server 3333
+    ```
 
 - python runtime timestamp print 
-  ```python3
+  ```python
   import time
   start_time = time.time()
   main()
