@@ -75,6 +75,16 @@
   print(data)
   ```
 
+## JSONL (JSON Line)
+- python -m pip install json-lines
+  ```python
+  import json_lines
+
+  with open('fileName.jsonl', 'rb') as f: # opening file in binary(rb) mode    
+    for item in json_lines.reader(f):
+      print(item) #or use print(item['X']) for printing specific data
+  ```
+
 ## pymongo (mongodb)
 - ModuleNotFoundError: No module named 'pymongo' # pymongo 설치하기
   ```bash
