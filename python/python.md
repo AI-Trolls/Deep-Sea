@@ -84,6 +84,8 @@
     for item in json_lines.reader(f):
       print(item) #or use print(item['X']) for printing specific data
   ```
+  - 이유는 모르겠지만, no module named 'json_lines' 에러가 난다.
+    따라서 그냥 파일을 읽고 라인 단위로 json.load를 해서 list에 결과를 append 하는 식으로 했다..
 
 ## pymongo (mongodb)
 - ModuleNotFoundError: No module named 'pymongo' # pymongo 설치하기
