@@ -16,6 +16,8 @@ Curation of everything
     - installation
       - curl -s https://packagecloud.io/install/repositories/immortal/immortal/script.deb.sh | sudo bash
       - apt install immortal
+    - stop all services
+      - immortalctl halt "*"
 
 ## 유용한 코드들
 - [Quiver](https://github.com/keplr-io/quiver)
