@@ -34,14 +34,15 @@ conda list
 
 ```
 conda install -c conda-forge nodejs
-```를 실행하였음.
+```
+를 실행하였음.
 그러나, "CondaHTTPError: HTTP 000 CONECTION FAILED for url <https://conda.anaconda.orf/conda-forge/linux-64/nodejs-10.4.1-0.tar.bz2"라는 오류가 발생함. 하지만 윈도우 컴퓨터에서는 됨.
 
 
 ## nvm
 https://github.com/creationix/nvm#manual-install
 
-1. add the following to the ~/.nvm/nvm.sh
+1. 아래를 실행!
 ```bash
 export NVM_DIR="$HOME/.nvm" && (
   git clone https://github.com/creationix/nvm.git "$NVM_DIR"
