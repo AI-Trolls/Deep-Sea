@@ -63,3 +63,14 @@
   rc('font', family=font_name)
   print(font_name)
   ```
+## mongoDB 설치하기
+  ```bash
+  sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+  
+  echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list # for Ubuntu 14.04 (Trusty)
+  #echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list # for Ubuntu 16.04(Xenial)
+  #echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list # for Ubuntu 18.04 (Bionic)
+
+  sudo apt-get update
+  sudo apt-get install -y mongodb-org
+  ```
