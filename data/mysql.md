@@ -71,8 +71,7 @@ sudo mysqld_safe --skip-grant &
 
 이유는 2가지 였다.
 
-1. var/run/mysqld 폴더가 없었음
-생성해주고, chown로 mysql:mysql 설정해줌
+1. var/run/mysqld 폴더가 없었음. 생성해주고, chown로 mysql:mysql 설정해줌
 
 2. --skip-grant-tables 로 바뀜
 
@@ -80,10 +79,9 @@ sudo mysqld_safe --skip-grant &
 ```mysql -uroot myql```로 mysql로 진입!!!
 
 4. query문을 통해서 패스워드 변경
-```mysql
-mysql> update user set password=password('원하는비밀번호입력') where user='root';
-mysql> flush privileges;
-mysql> quit
-
+        ```mysql
+        mysql> update user set password=password('원하는비밀번호입력') where user='root';
+        mysql> flush privileges;
+        mysql> quit
+        ```
 5. mysql 서비스 재시작!
-```
