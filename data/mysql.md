@@ -33,30 +33,30 @@ dir, mysql 폴더를 각각 지우고 빈 폴더로 다시 생성함
 
 1. 일단, apparmor 문제부터 해결했음
 
-/etc/apparmor.d/usr/sbin.mysql 에서
-```
-/etc/mysql/** r,
-```
-이 있는지 확인하고,
+    /etc/apparmor.d/usr/sbin.mysql 에서
+    ```
+    /etc/mysql/** r,
+    ```
+    이 있는지 확인하고,
 
-```
-/db/mysql/dir/ r,
-/db/mysql/dir/** rwk,
-```
-위 두줄을 추가함
+    ```
+    /db/mysql/dir/ r,
+    /db/mysql/dir/** rwk,
+    ```
+    위 두줄을 추가함
 
 2. 소유자/권한 문제 해결
 
-그리고, /db 위치에서,
-```
-chmod -R 0771 mysql
-chown -R mysql:mysql mysql
-```
+    그리고, /db 위치에서,
+    ```
+    chmod -R 0771 mysql
+    chown -R mysql:mysql mysql
+    ```
 
 3. mysqld --initialize 수행
-갑자기 에러없이 됨!
+    갑자기 에러없이 됨!
 
 4. service mysql start 수행
-갑자기 에러없이 됨!
+    갑자기 에러없이 됨!
 
--행복
+5. 행복
