@@ -60,3 +60,30 @@ dir, mysql 폴더를 각각 지우고 빈 폴더로 다시 생성함
     갑자기 에러없이 됨!
 
 5. 행복
+
+## 행복은 무슨 MySQL password 오류 나면서 접속이 안됨
+
+안전모드로 들어가기 위해,
+```
+sudo mysqld_safe --skip-grant &
+```
+을 열심히 시도 했으나 계속해서 실패,
+
+이유는 2가지 였다.
+
+1. var/run/mysqld 폴더가 없었음
+생성해주고, chown로 mysql:mysql 설정해줌
+
+2. --skip-grant-tables 로 바뀜
+
+3. ```sudo mysqld_safe --skip-grant-tables &``` 로 안전모드를 돌입하고 나면,
+```mysql -uroot myql```로 mysql로 진입!!!
+
+4. query문을 통해서 패스워드 변경
+```mysql
+mysql> update user set password=password('원하는비밀번호입력') where user='root';
+mysql> flush privileges;
+mysql> quit
+
+5. mysql 서비스 재시작!
+```
