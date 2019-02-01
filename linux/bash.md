@@ -1,3 +1,12 @@
+- 현재 폴더 이하 파일 갯수 세기
+  ```
+  find . -type f | wc -l
+  ```
+  watch 명령어로 업데이트 하면서 보기
+  ```
+  watch -n 1 'find . -type f | wc -l'
+  ```
+
 - for loop
   ```bash
   N=40
