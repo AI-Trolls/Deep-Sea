@@ -82,8 +82,9 @@ ruby를 위한 [rvm](https://stackoverflow.com/questions/4373128/how-do-i-activa
     ```
     드디어ㅠㅠ 원하는 버젼 사용... 원하던걸 하기위해 돌아가보자;
 
-### bundle install
-    `bundle install`은 bundler가 없다는 에러를   뱉어냈다.
+### 다시 bundle install로
+- bundle install
+    bundle install은 bundler가 없다는 에러를   뱉어냈다.
     ```err
     /usr/lib/ruby/2.3.0/rubygems/dependency.rb:319:in `to_specs': Could not find 'bundler' (>= 0.a) among 6 total gem(
     ```
