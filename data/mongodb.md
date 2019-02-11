@@ -63,3 +63,10 @@ db.books.update(
 
 - python no module named ujson, while it's already installed
   export PYTHONPATH=$PYTHONPATH:/usr/lib64/python2.7/site-packages
+
+
+- 특정 field가 not null인 것 찾기
+  ```mongodb
+  db.cols.find( { field: { $ne: null } } );
+  db.cols.find( { field: { $ne: '' } } ); //빈 스트링이었더니 이렇게 하는게 나에게는 맞
+  ```
