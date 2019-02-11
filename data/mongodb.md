@@ -19,26 +19,6 @@
    ```
 - save(insert) document (w/ mongoose)
 
-- error: YouCompleteMe unavailable: requires vim compiled with python
-  ```bash
-  apt-get install python-dev
-  ```
-  해도 안된다면,
-  ```bash
-  cd /tmp && git clone https://github.com/vim/vim.git && cd vim
-  ./configure --enable-pythoninterp --prefix=/usr
-  make && sudo make install
-  ```
-  make 과정에서 "you need to install a terminal library; for example ncurses"같은 error가 난다면,
-  ```
-  apt-get install libncurses5-dev libncursesw5-dev
-  ```
-  걍 태초부터 
-  https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
-
-- python no module named ujson, while it's already installed
-  export PYTHONPATH=$PYTHONPATH:/usr/lib64/python2.7/site-packages
-
 
 - 특정 field가 not null인 것 찾기
   ```mongodb
@@ -74,3 +54,23 @@
   - 재설치 시도
   
 - mongodb 재설치하기
+
+- error: YouCompleteMe unavailable: requires vim compiled with python
+  ```bash
+  apt-get install python-dev
+  ```
+  해도 안된다면,
+  ```bash
+  cd /tmp && git clone https://github.com/vim/vim.git && cd vim
+  ./configure --enable-pythoninterp --prefix=/usr
+  make && sudo make install
+  ```
+  make 과정에서 "you need to install a terminal library; for example ncurses"같은 error가 난다면,
+  ```
+  apt-get install libncurses5-dev libncursesw5-dev
+  ```
+  걍 태초부터 
+  https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
+
+- python no module named ujson, while it's already installed
+  export PYTHONPATH=$PYTHONPATH:/usr/lib64/python2.7/site-packages
