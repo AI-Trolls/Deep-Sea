@@ -11,6 +11,13 @@
     $ tar -xf file_name.tar
     ```
 
+  - *.tgz
+    ```
+    tar -cvzpf file_name.tgz target_dir 
+    tar -xvf file_name.tgz 
+    ```
+
+
   - *.tar.gz
     ```
     $ tar -zcf file_name.tar.gz file_or_dir
