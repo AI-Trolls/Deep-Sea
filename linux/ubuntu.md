@@ -10,6 +10,10 @@
   username:x: ... ::/home/username:/binbash
   username:x: ... ::/newdir/home/chanranhari:/binbash
   ```
+- 폴더 내 파일 수 세기
+  ```
+  find . -type f | wc -l
+  ```
 
 ### 개척
 - 리눅스 운영체제 bit 확인 방법 (Linux OS bit)
