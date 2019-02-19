@@ -62,6 +62,13 @@ Curation of everything
 ## 이것도 너무 많아 js
 - masonry js
 
+## 리눅스에서 구글 드라이브 다운로드
+  ```
+  pip install gdown
+  gdown https://drive.google.com/uc?id=file_id
+  ```
+  구글 드라이브 링크 복사해서, open -> uc 로 바꿔서 gdown 하면 됨!
+
 ## JupyterLab
   ```bash
   conda install -c conda-forge jupyterlab
