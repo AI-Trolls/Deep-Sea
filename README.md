@@ -100,6 +100,12 @@ Curation of everything
   jupyter console --kernel nodejs
   ```
 
+## conda install로 안되서 pip install로 설치하는데, conda에 적용 안되는 경우 (pip로 anaconda 환경에 설치)
+  - `python -V`로 실행되는 python 경로 확인
+    - 여기서 만약 source activate를 안한 상태라면, 기본 python path가 되어있을 것.
+    - 해둔 상태라면, anaconda를 포함하는 경로가 나올 것 ex) anaconda3/env/tf35/bin/pip
+    - 나의 경우 tf35라는 이름의 환경임. `anaconda3/env/tf35/bin/pip install tensorlayer` 이런식으로 설치하면 됨!
+
 ## Problem Solving
 - Vim update
   ```bash
