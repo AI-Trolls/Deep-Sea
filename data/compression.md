@@ -20,8 +20,8 @@
 
   - *.tar.gz
     ```
-    $ tar -zcf file_name.tar.gz file_or_dir
-    $ tar -xfz file_name.tar.gz
+    $ tar zcf file_name.tar.gz file_or_dir
+    $ tar xfz file_name.tar.gz
     ```
 
   - *.tar.bz2
