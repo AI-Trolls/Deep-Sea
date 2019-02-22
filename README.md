@@ -69,6 +69,16 @@ Curation of everything
   ```
   구글 드라이브 링크 복사해서, open -> uc 로 바꿔서 gdown 하면 됨!
 
+## Anaconda install and init
+  ```
+  curl -O https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh --limit-rate 10M
+  sha256sum Anaconda3-5.0.1-Linux-x86_64.sh
+  bash Anaconda3-5.0.1-Linux-x86_64.sh
+  source ~/.bashrc
+  conda create --name tf36 python=3.6
+  source activate tf36
+  ```
+
 ## JupyterLab
   ```bash
   conda install -c conda-forge jupyterlab
