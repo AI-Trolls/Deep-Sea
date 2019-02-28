@@ -89,6 +89,20 @@ Curation of everything
   jupyter lab --ip 0.0.0.0 --port 80
   ```
 
+## node process memory limit
+- 그냥 node를 사용할 경우
+  ```bash
+  node --max-old-space-size=1024 app.js                     # increase to 1gb
+  node --max-old-space-size=4096 app.js                     # increase to 4gb
+  node --max-old-space-size=6144 app.js                     # increase to 6gb
+  ```
+- pm2를 사용할 경우
+  ```
+  pm2 start app.js --node-args="--max-old-space-size=1024" # increase to 1gb
+  pm2 start app.js --node-args="--max-old-space-size=4096" # increase to 4gb
+  pm2 start app.js --node-args="--max-old-space-size=6144" # increase to 6gb
+  ```
+
 ## pixiedust 설치 및 사용
   https://pixiedust.github.io/pixiedust/install.html
   ```bash
