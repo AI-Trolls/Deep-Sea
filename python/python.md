@@ -1,4 +1,10 @@
 ## Python
+- add path dir
+  ```python
+  import sys
+  sys.path.append("../")
+  ```
+
 - python np array initialization with value and length
   ```python
   np.full((3, 5), 7, dtype=int)
