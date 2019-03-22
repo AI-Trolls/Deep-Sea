@@ -106,7 +106,6 @@ sudo mysqld_safe --skip-grant &
     ```
     UPDATE mysql.user SET Password = PASSWORD('password') WHERE User = 'root';
     ```
-    ref: https://support.rackspace.com/how-to/installing-mysql-server-on-ubuntu/
     그런데 에러..
     ```
     ERROR 1054 (42S22): Unknown column 'Password' in 'field list'
