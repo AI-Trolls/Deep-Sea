@@ -85,3 +85,35 @@ sudo mysqld_safe --skip-grant &
         mysql> quit
         ```
 5. mysql 서비스 재시작!
+
+### mysql을 윈도우 10에 설치한 우분투에 설치하기
+- 설치 명령어는 간단쓰-
+    ```bash
+    sudo apt-get update
+    sudo apt-get install mysql-server
+    ```
+- 설치가 아래와 같은 에러도 중단됨ㅠ
+    ```bash
+    cannot open /proc/net/unix: No such file or directory
+    cannot stat file /proc/1/fd/5: operation not permitted
+    cannot stat file /proc/1493/fd/7: operation not permitted
+    ```
+    아래의 이 한줄로 해결! (다행)
+    ```bash
+    sudo service mysql start sudo dpkg --configure -a
+    ```
+- 비밀번호를 설정을 해야함!
+    ```
+    UPDATE mysql.user SET Password = PASSWORD('password') WHERE User = 'root';
+    ```
+    ref: https://support.rackspace.com/how-to/installing-mysql-server-on-ubuntu/
+    그런데 에러..
+    ```
+    ERROR 1054 (42S22): Unknown column 'Password' in 'field list'
+    ```
+    아래 명령어로 바뀐듯!
+    ```
+    use mysql;
+    show tables;
+    update user set authentication_string=password('1111') where user='root';
+    ```
