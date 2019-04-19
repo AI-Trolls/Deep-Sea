@@ -42,6 +42,13 @@
     mongoimport -h 127.0.0.1:27017 -d _dbName -c _collectionName --file _filename.json
     ```
     
+- mongodb 재시작
+  - 웹에 쳐보면 다 service를 이용해서 하는데, 난 설치가 안되어있음ㅠ
+  - 그래서 가장 direct한 방법으로 켬. 자신에게 맞은 PORTNUM과 DBPATH를 넣으면 됨. nohup도 
+  ```bash
+  mongod --port PORTNUM --dbpath DBPATH
+  ```
+    
 - pymongo.errors.ServerSelectionTimeoutError: IP:PORT: [Errno 111] connection refused
 + Failed to restart mongod.service: Unit mongod.service not found (by sudo service mongod restart)
 + Failed to excute operation: No such file or dictionary (by sudo systemctl enable mongod)
