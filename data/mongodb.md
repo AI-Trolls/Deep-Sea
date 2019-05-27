@@ -1,6 +1,6 @@
 - create collection
   ```mongodb
-  db.createCollection("people", { autoIndexId: true, timestamps: { createdAt: 'createdDate',updatedAt: 'updatedDate' } )
+  db.createCollection("people", { autoIndexId: true } )
   ```
 - update specific fields
   ```mongo
