@@ -116,3 +116,11 @@ sudo mysqld_safe --skip-grant &
     show tables;
     update user set authentication_string=password('1111') where user='root';
     ```
+    
+### Errors
+- ERROR 1045 (28000): Access denied for user 'chanranhari'@'localhost' (using password: NO)
+    - `mysql -u root -p`로 root로 접속!
+- InternalError: (1130, "Host '127.0.0.1' is not allowed to connect to this MySQL server")
+    - `grant all privileges on *.* to 'root'@'%' identified by 'PASSWORD' with grant option;
+        - PASSWORD 채워줄 것! 와... 
+    
